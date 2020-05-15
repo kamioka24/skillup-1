@@ -45,6 +45,14 @@ header {
 	height: 70px;
 }
 
+.menu-icon {
+	float: right;
+	font-size: 45px;
+	color: #FAFAFA;
+	display: none;
+
+}
+
 .header-list {
 	display: flex;
 	float: right;
@@ -276,4 +284,158 @@ footer {
 	background-color: #EC715F;
 	color: #FAFAFA;
 	font-size: 16px;
+}
+
+	/* レスポンシブ対応 */
+
+@media (max-width: 767px ) {
+	header {
+		height: 50px;
+	}
+
+	.header-list {
+		display: none;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	.header-logo {
+		height: 50px;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	/* メインビジュアル */
+
+	#mv {
+		background-image: url(img/code.png);
+	}
+
+	.mv-title {
+		font-size: 40px;
+	}
+
+	.mv-text {
+		font-size: 18px;
+	}
+
+	/* Portfolio */
+
+	#portfolio {
+		height: 1250px;
+	}
+
+	.p-container {
+		width: 90%;
+	}
+
+	.production-image {
+		clear: left;
+	}
+
+	.images {
+		width: 90%;
+	}
+
+	.img1, .img3, .img5 {
+		display: none;
+	}
+
+	.img2, .img4 {
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	.img6 {
+		margin: 0;
+	}
+
+	/* Feature */
+
+	#feature {
+		height: 1550px;
+	}
+
+	.f-container {
+		width: 90%;
+	}
+
+	.feature-contents {
+		flex-direction: column;
+	}
+
+	.feature-item {
+		margin: 0 auto;
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	.last {
+		margin: 0 auto;
+	}
+
+	/* Profile */
+
+	#profile {
+		height: 1100px;
+		background-color: #ECEFF1;
+		color: #000;
+	}
+
+	.p-container {
+		width: 90%;
+	}
+
+	.profile-contents {
+		flex-direction: column;
+	}
+
+	.image-area, .my-area {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.profile-img {
+		margin: 20px auto;
+	}
+
+	h4, .profile-show {
+		text-align: center;
+	}
+
+	/* Contact */
+
+	#contact {
+		height: 670px;
+	}
+
+	.c-container {
+		width: 90%;
+	}
+
+	.contact-form {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.form-area, .sns-area {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.fab {
+		margin: 0 auto;
+		padding-right: 8px;
+	}
+
+	.form {
+		width: 90%;
+		padding-bottom: 5px;
+		margin: 0 auto;
+	}
+
 }
